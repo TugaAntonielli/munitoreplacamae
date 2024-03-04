@@ -27,7 +27,7 @@ main{
 }
 
 .monitor{
-    height: 200vh;
+    height: auto;
     width: 100%;
     background-color: rgb(216, 216, 216);
 }
@@ -37,16 +37,16 @@ main{
     background-size: 100%;
     background-position-y: -150px;
     width: 100%;
-    height: 72vh;
+    height: 650px;
     float: left;
 }
 
 .monitor .slide1::after{
     content: "";
     width: 100%;
-    height: 39.3vh;
+    height: 352px;
     position: absolute;
-    z-index: 8;
+    z-index: 1;
     background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 70%, rgb(216, 216, 216) 100%);
 }
 
@@ -129,11 +129,40 @@ main{
     padding: 50px;
 }
 
+.primeiros_monitores h2{
+    background-color: rgb(63, 63, 63);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.monitores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.monitores div{
+    width: 30%;
+    margin: 40px;
+}
+
+.monitores img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.monitores h3{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .funcionamento{
     background-color: rgb(63, 63, 63);
     color: white;
     text-align: center;
-    height: 100vh;
+    height: 1000px;
     padding-top: 50px;
 }
 
@@ -171,8 +200,9 @@ main{
 
 .card img{
     width: 90%;
+    height: 93%;
     border-radius: 5%;
-    margin-top: 20%;
+    margin-top: 3.5%;
 }
 
 .card div h3{
@@ -211,6 +241,62 @@ main{
     }
 }
 
+.fps{
+    text-align: center;
+    padding: 40px;
+}
+
+.fps h2{
+    font-size: 40px;
+}
+
+.fps p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.fps img{
+    margin-left: 35%;
+    margin-right: 35%;
+    width: 30%;
+}
+
+.resolução{
+    background-color: rgb(63, 63, 63);
+    color: white;
+    text-align: center;
+}
+
+.resolução h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+    padding-top: 40px;
+}
+
+.resolução h3{
+    font-size: 25px;
+    padding-top: 40px;
+}
+
+.resolução ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.resolução li{
+    background-color: gainsboro;
+    color: black;
+    margin: 30px;
+    margin-bottom: 60px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+}
 
 footer{
     width: 100%;
