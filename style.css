@@ -20,6 +20,8 @@ main #sectionum {
     height: 200vh;
     width: 100%;
     background-color: blue;
+    display: flex;
+    flex-direction: row;
 }
 
 footer {
@@ -44,5 +46,8 @@ footer {
     padding-top: 10px;
 }
 #paragrafo{
-    
+    margin-top: 10px;
+    margin-left: 5px;
+    text-align: justify;
+    margin-right: 5px;
 }
