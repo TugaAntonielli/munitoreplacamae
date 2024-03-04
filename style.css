@@ -50,4 +50,18 @@ footer {
     margin-left: 5px;
     text-align: justify;
     margin-right: 5px;
+    font-size: 20px;
+}
+#gigabit{
+    height: 400px;
+    width: 400px;
+    margin-top: 500px;
+    margin-right: 5px;
+    display: block;
+    border: solid 2px black;
+    box-shadow: 2px 4px rgba(64, 64, 64, 0.404);
+}
+#paragrafodois{
+    font-size: 20px;
+    margin-right: 50px;
 }
