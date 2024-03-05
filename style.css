@@ -19,7 +19,6 @@ header {
 main #sectionum {
     height: 200vh;
     width: 100%;
-    background-color: blue;
     display: flex;
     flex-direction: row;
 }
@@ -36,8 +35,6 @@ footer {
 }
 
 #umplaca {
-    display: block;
-    border: solid 2px black;
     box-shadow: 2px 4px rgba(64, 64, 64, 0.404);
 }
 
@@ -53,15 +50,14 @@ footer {
     font-size: 20px;
 }
 #gigabit{
+    display: flex;
+    flex-direction: row-reverse;
     height: 400px;
     width: 400px;
     margin-top: 500px;
     margin-right: 5px;
     display: block;
-    border: solid 2px black;
-    box-shadow: 2px 4px rgba(64, 64, 64, 0.404);
 }
 #paragrafodois{
     font-size: 20px;
-    margin-right: 50px;
 }
