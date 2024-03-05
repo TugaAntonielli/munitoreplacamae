@@ -1,19 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: "Comfortaa", sans-serif;
 }
 
 header{
     height: 150px;
+    float: left;
+    display: block;
+    height: 70px;
     width: 100%;
     background-color:black;
-    display: block;
+    
 }
 header h1{
-color: white;
-text-align: center;
-padding-top: 20px;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
 }
+
 #a1 {
     color: white;
     padding-left: 530px;
@@ -27,14 +34,294 @@ padding-top: 20px;
     
 }
 
-main section{
-    height: 200vh;
+main{
+    float: left;
+    display: block;
     width: 100%;
-    background-color: blue;
+}
+
+.placa{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(66, 66, 66);
+}
+
+.monitor{
+    height: auto;
+    width: 100%;
+    background-color: rgb(216, 216, 216);
+}
+
+.monitor .slide1{
+    background-image: url(/Ilustrações/Monitor.png);
+    background-size: 100%;
+    background-position-y: -150px;
+    width: 100%;
+    height: 650px;
+    float: left;
+}
+
+.monitor .slide1::after{
+    content: "";
+    width: 100%;
+    height: 352px;
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 70%, rgb(216, 216, 216) 100%);
+}
+
+#monitor{
+    font-size: 80px;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    padding-top: 210px;
+    position: relative;
+}
+
+#monitor::before{
+    content: "";
+    animation: palavra 5s infinite;
+}
+
+#monitor::after{
+    content: "|";
+    position: absolute;
+    opacity: 1;
+    animation: cursor .5s infinite;
+}
+
+@keyframes cursor {
+    0%{
+        opacity: 0;
+    }
+    
+}
+
+@keyframes palavra {
+    0%,7%{
+        content: "Monitor";
+    }
+    0%,14%{
+        content: "Monito";
+    }
+    0%,21%{
+        content: "Monit";
+    }
+    0%,28%{
+        content: "Moni";
+    }
+    0%,35%{
+        content: "Mon";
+    }
+    0%,42%{
+        content: "Mo";
+    }
+    0%,49%{
+        content: "M";
+    }
+    0%,56%{
+        content: "Mo";
+    }
+    0%,63%{
+        content: "Mon";
+    }
+    0%,70%{
+        content: "Moni";
+    }
+    0%,77%{
+        content: "Monit";
+    }
+    0%,84%{
+        content: "Monito";
+    }
+    0%,91%{
+        content: "Monitor";
+    }
+    0%,100%{
+        content: "Monitor";
+    }
+}
+
+#definição{
+    font-family: "Comfortaa", sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+.primeiros_monitores h2{
+    background-color: rgb(63, 63, 63);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.monitores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.monitores div{
+    width: 30%;
+    margin: 40px;
+}
+
+.monitores img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.monitores h3{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.funcionamento{
+    background-color: rgb(63, 63, 63);
+    color: white;
+    text-align: center;
+    height: 1000px;
+    padding-top: 50px;
+}
+
+.funcionamento h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    transform-style: preserve-3d;
+    width: 300px;
+    height: 400px;
+    transition: all .9s;
+    cursor: pointer;
+    margin: 20px;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 5%;
+}
+
+.card div{
+    width: 300px;
+    height: 400px;
+    background-color: gainsboro;
+    color: black;
+    position: absolute;
+    border-radius: 5%;
+}
+
+.card img{
+    width: 90%;
+    height: 93%;
+    border-radius: 5%;
+    margin-top: 3.5%;
+}
+
+.card div h3{
+    margin-top: 45%;
+    font-size: 22px;
+    font-weight: 1000;
+    margin-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.card div p{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#front{
+    transform: rotateY(180deg);
+}
+
+.flip{
+    transform: rotateY(180deg);
+}
+
+.flip #front{
+    z-index: 1;
+    animation: entrada 1.5s;
+}
+
+@keyframes entrada {
+    0%,50%{
+        z-index: 0;
+    }
+    50%,100%{
+        z-index: 1;
+    }
+}
+
+.fps{
+    text-align: center;
+    padding: 40px;
+}
+
+.fps h2{
+    font-size: 40px;
+}
+
+.fps p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.fps img{
+    margin-left: 35%;
+    margin-right: 35%;
+    width: 30%;
+}
+
+.resolução{
+    background-color: rgb(63, 63, 63);
+    color: white;
+    text-align: center;
+}
+
+.resolução h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+    padding-top: 40px;
+}
+
+.resolução h3{
+    font-size: 25px;
+    padding-top: 40px;
+}
+
+.resolução ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.resolução li{
+    background-color: gainsboro;
+    color: black;
+    margin: 30px;
+    margin-bottom: 60px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    border-radius: 10px;
 }
 
 footer{
-    height: 50vh;
     width: 100%;
-    background-color: black;
+    height: 100px;
+    float: left;
+    display: block;
+    background-color: blue;
 }
