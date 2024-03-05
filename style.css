@@ -16,11 +16,13 @@ header {
     flex-direction: column;
 }
 
-main #sectionum {
-    height: 200vh;
+main .motherboardsections {
+    height: 60vh;
     width: 100%;
     display: flex;
     flex-direction: row;
+    gap: 600px;
+    margin-left: 20px;
 }
 
 footer {
@@ -42,22 +44,11 @@ footer {
     padding-left: 10px;
     padding-top: 10px;
 }
-#paragrafo{
+#paragrafo, #paragrafo2{
     margin-top: 10px;
     margin-left: 5px;
     text-align: justify;
     margin-right: 5px;
     font-size: 20px;
-}
-#gigabit{
-    display: flex;
-    flex-direction: row-reverse;
-    height: 400px;
-    width: 400px;
-    margin-top: 500px;
-    margin-right: 5px;
-    display: block;
-}
-#paragrafodois{
-    font-size: 20px;
+    width: 600px
 }
