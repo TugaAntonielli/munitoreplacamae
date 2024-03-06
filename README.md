@@ -1,9 +1,3 @@
-<h1>REVISÃO DE HARDWARE, HTML E CSS</h1>
-<h2>MONITOR E PLACA MÃE</h2>
-<h3>João Pedro, Gabriel Antonielli, Guilherme Buys e Felipe Rieger - 201</h3>
-
-<style>
-  *{
-    text-align: center;
-  }
-</style>
+<h1 align='center'>REVISÃO DE HARDWARE, HTML E CSS</h1>
+<h2 align='center'>MONITOR E PLACA MÃE</h2>
+<h3 align='center'>João Pedro, Gabriel Antonielli, Guilherme Buys e Felipe Rieger - 201</h3>
