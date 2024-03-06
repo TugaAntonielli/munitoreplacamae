@@ -326,12 +326,6 @@ footer{
     background-color: blue;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-}
-
 header {
     height: 70px;
     width: 100%;
@@ -349,6 +343,7 @@ main .motherboardsections {
     flex-direction: row;
     gap: 600px;
     margin-left: 20px;
+    margin-top: 20px;
 }
 
 footer {
@@ -377,4 +372,8 @@ footer {
     margin-right: 5px;
     font-size: 20px;
     width: 600px
+}
+
+#paragrafo2 {
+    margin-left: 120px;
 }
